@@ -34,7 +34,6 @@ jobs:
       - image: cimg/node:16.10
     steps:
       - checkout
-      - run: npm ci
       - snyk/install
       - run:
           command: snyk version
